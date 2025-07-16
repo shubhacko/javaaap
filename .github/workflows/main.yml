@@ -9,10 +9,6 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-      packages: write  # Required to push to GHCR
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
